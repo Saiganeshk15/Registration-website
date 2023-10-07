@@ -32,12 +32,12 @@
             <br>
             <div class="dropdown">
                 <div class="dropdown-select" onclick="toggleDropdown()">
-                    Team size: 1
+                    Team size: 2
                     <img class="arrow" src="down-arrow.png" alt="arrow">
                 </div>
                 <div class="dropdown-options" id="dropdownOptions">
-                    <a href="#"><div class="dropdown-option">1</div></a>
-                    <a href="ts-2.html"><div class="dropdown-option">2</div></a>
+                    <a href="index.html"><div class="dropdown-option">1</div></a>
+                    <a href="#"><div class="dropdown-option">2</div></a>
                     <a href="ts-3.html"><div class="dropdown-option">3</div></a>
                     <a href="ts-4.html"><div class="dropdown-option">4</div></a>
                 </div>
@@ -45,6 +45,47 @@
             
             <div class="participant-1">
                 <label for="Team Size">Participant 1:</label>
+                <div class="fields">
+                    <div class="column">
+                        <div class="form__group field">
+                            <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
+                            <label for="name" class="form__label">Name</label>
+                        </div>
+                        <div class="form__group field">
+                            <input type="email" aria-required="" class="form__field" placeholder="email" name="email" id='email' required />
+                            <label for="email" class="form__label">Email</label>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="form__group field">
+                            <input type="input" class="form__field" placeholder="year" name="year" id='year' required />
+                            <label for="year" class="form__label">Year</label>
+                        </div>
+                        <div class="form__group field">
+                            <input type="text" aria-required="" class="form__field" placeholder="roll-no" name="roll-no" id='roll-no' required />
+                            <label for="roll-no" class="form__label">Roll no</label>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="form__group field">
+                            <input type="input" class="form__field" placeholder="branch" name="branch" id='branch' required />
+                            <label for="branch" class="form__label">Branch</label>
+                        </div>
+                        <div class="form__group field">
+                            <input type="text" aria-required="" class="form__field" placeholder="sec" name="sec" id='sec' required />
+                            <label for="sec" class="form__label">Sec</label>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="form__group field">
+                            <input type="input" class="form__field" placeholder="phone-no" name="phone-no" id='phone-no' required />
+                            <label for="phone-no" class="form__label">Phone no</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="participant-2">
+                <label for="Team Size">Participant 2:</label>
                 <div class="fields">
                     <div class="column">
                         <div class="form__group field">

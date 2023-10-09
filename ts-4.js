@@ -1,6 +1,9 @@
+async function sleepAsync(milliseconds) {
+    return new Promise(resolve => setTimeout(resolve, milliseconds));
+}
+
 document.querySelector(".submit").addEventListener('click',async (e) => {
     e.preventDefault();
-    alert("Registrations sucessful.")
     //Particpant 1
     var name1 = document.getElementById('name1').value;
     var email1 = document.getElementById('email1').value;
@@ -63,6 +66,7 @@ document.querySelector(".submit").addEventListener('click',async (e) => {
        sec4 : sec4,
        phno4 : phno4
        });
-       await Sleep(3000);
-        window.location.href = 'About.html';
+       await sleepAsync(1000)
+       alert("Registrations sucessful.")
+       window.location.href = 'About.html';
  })

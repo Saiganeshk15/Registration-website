@@ -142,6 +142,9 @@ inputfield
   .form__label {
     position: absolute;
     display: block;
+    top: 0;
+    font-size: 1rem;
+    padding-left: 5%;
     transition: 0.2s;
   }
   
@@ -295,9 +298,6 @@ RESPONSIVE STYLES
   }
   .form__field{
     height: 25px;
-  }
-  .form__label {
-    top: 10px!important;
   }
   .logo{
     height: 80px;

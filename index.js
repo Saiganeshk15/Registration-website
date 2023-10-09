@@ -7,11 +7,11 @@ function toggleDropdown() {
 }
 
 
-// document.querySelector(".submit").addEventListener('click', e => {
-//    e.preventDefault();
-//    alert("Registrations sucessful.")
-//    db.collection('ts-1').add({
-//       name: "sai",
-//       city: "hyd"
-//   });
-// })
+document.querySelector(".submit").addEventListener('click', e => {
+   e.preventDefault();
+   alert("Registrations sucessful.")
+   db.collection('ts-1').add({
+      name: "sai",
+      city: "hyd"
+  });
+})

@@ -1,4 +1,4 @@
-export var config = {
+var config = {
 API_KEY: "IzaSyAbZHx_gVLorTqbtaekr4L6MmNeQ5ZDXZI",
 AUTH_DOMAIN : "registration-website-2023-24.firebaseapp.com",
 PROJECT_ID : "registration-website-2023-24",

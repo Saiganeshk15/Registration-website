@@ -8,6 +8,8 @@
     <link rel="icon" href="logo.png" type="image/x-icon">
     <meta name="description" content="Register for the events organised by IEEE - VBIT SB">
     <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore-compat.js"></script>
 </head>
 
 <body>
@@ -48,38 +50,38 @@
                 <div class="fields">
                     <div class="column">
                         <div class="form__group field">
-                            <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
-                            <label for="name" class="form__label">Name</label>
+                            <input type="input" class="form__field" placeholder="Name" name="name" id='name1' required />
+                            <label for="name1" class="form__label">Name</label>
                         </div>
                         <div class="form__group field">
-                            <input type="email" aria-required="" class="form__field" placeholder="email" name="email" id='email' required />
-                            <label for="email" class="form__label">Email</label>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="form__group field">
-                            <input type="input" class="form__field" placeholder="year" name="year" id='year' required />
-                            <label for="year" class="form__label">Year</label>
-                        </div>
-                        <div class="form__group field">
-                            <input type="text" aria-required="" class="form__field" placeholder="roll-no" name="roll-no" id='roll-no' required />
-                            <label for="roll-no" class="form__label">Roll no</label>
+                            <input type="email" aria-required="" class="form__field" placeholder="email" name="email" id='email1' required />
+                            <label for="email1" class="form__label">Email</label>
                         </div>
                     </div>
                     <div class="column">
                         <div class="form__group field">
-                            <input type="input" class="form__field" placeholder="branch" name="branch" id='branch' required />
-                            <label for="branch" class="form__label">Branch</label>
+                            <input type="input" class="form__field" placeholder="year" name="year" id='year1' required />
+                            <label for="year1" class="form__label">Year</label>
                         </div>
                         <div class="form__group field">
-                            <input type="text" aria-required="" class="form__field" placeholder="sec" name="sec" id='sec' required />
-                            <label for="sec" class="form__label">Sec</label>
+                            <input type="text" aria-required="" class="form__field" placeholder="roll-no" name="roll-no" id='roll-no1' required />
+                            <label for="roll-no1" class="form__label">Roll no</label>
                         </div>
                     </div>
                     <div class="column">
                         <div class="form__group field">
-                            <input type="input" class="form__field" placeholder="phone-no" name="phone-no" id='phone-no' required />
-                            <label for="phone-no" class="form__label">Phone no</label>
+                            <input type="input" class="form__field" placeholder="branch" name="branch" id='branch1' required />
+                            <label for="branch1" class="form__label">Branch</label>
+                        </div>
+                        <div class="form__group field">
+                            <input type="text" aria-required="" class="form__field" placeholder="sec" name="sec" id='sec1' required />
+                            <label for="sec1" class="form__label">Sec</label>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="form__group field">
+                            <input type="input" class="form__field" placeholder="phone-no" name="phone-no" id='phone-no1' required />
+                            <label for="phone-no1" class="form__label">Phone no</label>
                         </div>
                     </div>
                 </div>
@@ -89,38 +91,38 @@
                 <div class="fields">
                     <div class="column">
                         <div class="form__group field">
-                            <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
-                            <label for="name" class="form__label">Name</label>
+                            <input type="input" class="form__field" placeholder="Name" name="name" id='name2' required />
+                            <label for="name2" class="form__label">Name</label>
                         </div>
                         <div class="form__group field">
-                            <input type="email" aria-required="" class="form__field" placeholder="email" name="email" id='email' required />
-                            <label for="email" class="form__label">Email</label>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="form__group field">
-                            <input type="input" class="form__field" placeholder="year" name="year" id='year' required />
-                            <label for="year" class="form__label">Year</label>
-                        </div>
-                        <div class="form__group field">
-                            <input type="text" aria-required="" class="form__field" placeholder="roll-no" name="roll-no" id='roll-no' required />
-                            <label for="roll-no" class="form__label">Roll no</label>
+                            <input type="email" aria-required="" class="form__field" placeholder="email" name="email" id='email2' required />
+                            <label for="email2" class="form__label">Email</label>
                         </div>
                     </div>
                     <div class="column">
                         <div class="form__group field">
-                            <input type="input" class="form__field" placeholder="branch" name="branch" id='branch' required />
-                            <label for="branch" class="form__label">Branch</label>
+                            <input type="input" class="form__field" placeholder="year" name="year" id='year2' required />
+                            <label for="year2" class="form__label">Year</label>
                         </div>
                         <div class="form__group field">
-                            <input type="text" aria-required="" class="form__field" placeholder="sec" name="sec" id='sec' required />
-                            <label for="sec" class="form__label">Sec</label>
+                            <input type="text" aria-required="" class="form__field" placeholder="roll-no" name="roll-no" id='roll-no2' required />
+                            <label for="roll-no2" class="form__label">Roll no</label>
                         </div>
                     </div>
                     <div class="column">
                         <div class="form__group field">
-                            <input type="input" class="form__field" placeholder="phone-no" name="phone-no" id='phone-no' required />
-                            <label for="phone-no" class="form__label">Phone no</label>
+                            <input type="input" class="form__field" placeholder="branch" name="branch" id='branch2' required />
+                            <label for="branch2" class="form__label">Branch</label>
+                        </div>
+                        <div class="form__group field">
+                            <input type="text" aria-required="" class="form__field" placeholder="sec" name="sec" id='sec2' required />
+                            <label for="sec2" class="form__label">Sec</label>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="form__group field">
+                            <input type="input" class="form__field" placeholder="phone-no" name="phone-no" id='phone-no2' required />
+                            <label for="phone-no2" class="form__label">Phone no</label>
                         </div>
                     </div>
                 </div>
@@ -130,38 +132,38 @@
                 <div class="fields">
                     <div class="column">
                         <div class="form__group field">
-                            <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
-                            <label for="name" class="form__label">Name</label>
+                            <input type="input" class="form__field" placeholder="Name" name="name" id='name3' required />
+                            <label for="name3" class="form__label">Name</label>
                         </div>
                         <div class="form__group field">
-                            <input type="email" aria-required="" class="form__field" placeholder="email" name="email" id='email' required />
-                            <label for="email" class="form__label">Email</label>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="form__group field">
-                            <input type="input" class="form__field" placeholder="year" name="year" id='year' required />
-                            <label for="year" class="form__label">Year</label>
-                        </div>
-                        <div class="form__group field">
-                            <input type="text" aria-required="" class="form__field" placeholder="roll-no" name="roll-no" id='roll-no' required />
-                            <label for="roll-no" class="form__label">Roll no</label>
+                            <input type="email" aria-required="" class="form__field" placeholder="email" name="email" id='email3' required />
+                            <label for="email3" class="form__label">Email</label>
                         </div>
                     </div>
                     <div class="column">
                         <div class="form__group field">
-                            <input type="input" class="form__field" placeholder="branch" name="branch" id='branch' required />
-                            <label for="branch" class="form__label">Branch</label>
+                            <input type="input" class="form__field" placeholder="year" name="year" id='year3' required />
+                            <label for="year3" class="form__label">Year</label>
                         </div>
                         <div class="form__group field">
-                            <input type="text" aria-required="" class="form__field" placeholder="sec" name="sec" id='sec' required />
-                            <label for="sec" class="form__label">Sec</label>
+                            <input type="text" aria-required="" class="form__field" placeholder="roll-no" name="roll-no" id='roll-no3' required />
+                            <label for="roll-no3" class="form__label">Roll no</label>
                         </div>
                     </div>
                     <div class="column">
                         <div class="form__group field">
-                            <input type="input" class="form__field" placeholder="phone-no" name="phone-no" id='phone-no' required />
-                            <label for="phone-no" class="form__label">Phone no</label>
+                            <input type="input" class="form__field" placeholder="branch" name="branch" id='branch3' required />
+                            <label for="branch3" class="form__label">Branch</label>
+                        </div>
+                        <div class="form__group field">
+                            <input type="text" aria-required="" class="form__field" placeholder="sec" name="sec" id='sec3' required />
+                            <label for="sec3" class="form__label">Sec</label>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="form__group field">
+                            <input type="input" class="form__field" placeholder="phone-no" name="phone-no" id='phone-no3' required />
+                            <label for="phone-no3" class="form__label">Phone no</label>
                         </div>
                     </div>
                 </div>

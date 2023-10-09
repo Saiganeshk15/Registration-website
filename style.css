@@ -111,7 +111,7 @@ inputfield
     border: 2px solid white;
     background-color: #00B4D8;
     margin-bottom: 3%;
-    width: 500px;
+    width: 40%;
     margin-left: 7%;
     border-radius: 5px;
 }
@@ -141,11 +141,8 @@ inputfield
   
   .form__label {
     position: absolute;
-    top: 0;
-    padding-left: 5%;
     display: block;
     transition: 0.2s;
-    font-size: 1rem;
   }
   
   .form__field:focus {
@@ -161,7 +158,6 @@ inputfield
     display: block;
     transition: 0.2s;
     padding-left: 5%;
-    
     background-color: transparent;
     font-size: 1rem;
   }
@@ -235,9 +231,110 @@ footer{
   justify-content: space-around;
 }
 .text{
-  font-size: 32px;
+  font-size: 22px;
 }
 .sm-logos img{
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
+}
+
+/************************
+RESPONSIVE STYLES
+*************************/
+@media screen and (max-width: 768px) and (min-width: 426px){
+  .text{
+    font-size: 18px;
+  }
+  .sm-logos img {
+    height: 30px;
+    width: 30px;
+  }
+  .hero-section p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 427px) and (min-width: 376px){
+  .text{
+    font-size: 12px;
+  }
+  .form__field{
+    height: 30px;
+  }
+  .dropdown-select{
+    width: 300px;
+  }
+  .arrow{
+    right: -45%;
+  }
+  .submit{
+    height: 50px;
+    width: 200px;
+  }
+  .sm-logos img {
+    height: 20px;
+    width: 20px;
+  }
+  .hero-section p {
+    font-size: 20px;
+  }
+  .form__group{
+    width: 300px;
+  }
+  .column{
+    display: block;
+  }
+  h1{
+    font-size: 25px!important;
+  }h2{
+    font-size: 22px!important;
+  }
+}
+@media screen and (max-width: 376px){
+  .text{
+    font-size: 10px;
+  }
+  .form__field{
+    height: 25px;
+  }
+  .form__label {
+    top: 10px!important;
+  }
+  .logo{
+    height: 80px;
+    width: 80px;
+  }
+  .dropdown-select{
+    width: 240px;
+  }
+  .arrow{
+    right: -35%;
+  }
+  .submit{
+    height: 50px;
+    width: 200px;
+  }
+  .sm-logos img {
+    height: 10px;
+    width: 10px;
+  }
+  .hero-section p {
+    font-size: 18px;
+  }
+  .form__group{
+    width: 235px;
+  }
+  .column{
+    display: block;
+  }
+  h1{
+    font-size: 20px!important;
+  }h2{
+    font-size: 18px!important;
+  }
+  .form{
+    border-radius: 15px;
+}
+footer{
+  height: 40px;
+}
 }

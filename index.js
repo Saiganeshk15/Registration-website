@@ -6,7 +6,12 @@ function toggleDropdown() {
    arrow.style.transform = arrow.style.transform === "rotate(180deg)" ? "rotate(0deg)" : "rotate(180deg) ";
 }
 
-function submit() {
-   alert("Registration successful");
-   window.location.href = "About.html";
-}
+
+// document.querySelector(".submit").addEventListener('click', e => {
+//    e.preventDefault();
+//    alert("Registrations sucessful.")
+//    db.collection('ts-1').add({
+//       name: "sai",
+//       city: "hyd"
+//   });
+// })

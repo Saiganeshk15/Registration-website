@@ -1,4 +1,4 @@
-document.querySelector(".submit").addEventListener('click', e => {
+document.querySelector(".submit").addEventListener('click',async (e) => {
     e.preventDefault();
     alert("Registrations sucessful.")
     //participant 1
@@ -18,4 +18,6 @@ document.querySelector(".submit").addEventListener('click', e => {
        sec : sec1,
        phno : phno1
    });
+    await Sleep(3000);
+    window.location.href = 'About.html';
  })

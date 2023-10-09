@@ -1,4 +1,4 @@
-document.querySelector(".submit").addEventListener('click', e => {
+document.querySelector(".submit").addEventListener('click',async (e) => {
     e.preventDefault();
     alert("Registrations sucessful.")
     //Particpant 1
@@ -17,7 +17,7 @@ document.querySelector(".submit").addEventListener('click', e => {
     var branch2 = document.getElementById('branch2').value;
     var sec2 = document.getElementById('sec2').value;
     var phno2 = document.getElementById('phno2').value;
-    db.collection('ts-4').add({
+    db.collection('ts-2').add({
        name1 : name1,
        email1 : email1,
        year1 : year1,
@@ -33,5 +33,6 @@ document.querySelector(".submit").addEventListener('click', e => {
        sec2 : sec2,
        phno2 : phno2
        });
+       await Sleep(3000);
        window.location.href = 'About.html';
  })

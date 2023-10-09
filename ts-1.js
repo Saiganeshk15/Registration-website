@@ -18,5 +18,4 @@ document.querySelector(".submit").addEventListener('click', e => {
        sec : sec1,
        phno : phno1
    });
-   window.location.href = 'About.html';
  })

@@ -5,23 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IEEE - VBIT SB | Registration</title>
-    <link rel="icon" href="logo.png" type="image/x-icon">
-    <meta name="description" content="Register for the events organised by IEEE - VBIT SB">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/Assets/images/logo.png" type="image/x-icon">
+    <meta name="description" content="Register for the events organized by IEEE - VBIT SB">
     <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore-compat.js"></script>
+    <link rel="stylesheet" href="/Assets/styles/style.css">
 </head>
 
 <body>
     <div class="logo-container">
-        <img class="logo" src="logo.png" alt="IEEE - VBIT SB LOGO">
+        <img class="logo" src="/Assets/images/logo.png" alt="IEEE - VBIT SB LOGO">
     </div>
     <div class="main-container">
         <h1><strong><i>EVENT NAME</i></strong></h1>
         <div class="hero-section">
             <h2>About Event</h2>
-            <p class="about-event">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et
+            <p class="about-event">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                 ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                 fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
@@ -29,112 +29,36 @@
             </p>
         </div>
         <h1><strong>Registration form</strong></h1>
+        <!-- Registration form content -->
         <div class="form">
-            <label class="team-size" for="Team Size">Team Size:</label>
+            <label class="team-size" for="Team Size">Team Size :</label>
             <br>
             <div class="dropdown">
-                <div class="dropdown-select" onclick="toggleDropdown()">
-                    Team size: 1
-                    <img class="arrow" src="down-arrow.png" alt="arrow">
-                </div>
+                <div class="dropdown-select" onclick="toggleDropdown()">Team size : 1</div>
                 <div class="dropdown-options" id="dropdownOptions">
-                    <a href="#">
-                        <div class="dropdown-option">1</div>
-                    </a>
-                    <a href="ts-2.html">
-                        <div class="dropdown-option">2</div>
-                    </a>
-                    <a href="ts-3.html">
-                        <div class="dropdown-option">3</div>
-                    </a>
-                    <a href="ts-4.html">
-                        <div class="dropdown-option">4</div>
-                    </a>
+                    <div class="dropdown-option" onclick="selectNumber(1)">1</div>
+                    <div class="dropdown-option" onclick="selectNumber(2)">2</div>
+                    <div class="dropdown-option" onclick="selectNumber(3)">3</div>
+                    <div class="dropdown-option" onclick="selectNumber(4)">4</div>
                 </div>
             </div>
-
-            <div class="participant-1">
-                <label for="Team Size">Participant 1:</label>
-                <div class="fields">
-                    <div class="column">
-                        <div class="form__group field">
-                            <input type="input" class="form__field" placeholder="Name" name="name" id='name1'
-                                required />
-                            <label for="name1" class="form__label">Name</label>
-                        </div>
-                        <div class="form__group field">
-                            <input type="email" aria-required="" class="form__field" placeholder="email" name="email"
-                                id='email1' required />
-                            <label for="email1" class="form__label">Email</label>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="form__group field">
-                            <input type="input" class="form__field" placeholder="year" name="year" id='year1'
-                                required />
-                            <label for="year1" class="form__label">Year</label>
-                        </div>
-                        <div class="form__group field">
-                            <input type="text" aria-required="" class="form__field" placeholder="roll-no" name="roll-no"
-                                id='rollno1' required />
-                            <label for="roll-no1" class="form__label">Roll no</label>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="form__group field">
-                            <input type="input" class="form__field" placeholder="branch" name="branch" id='branch1'
-                                required />
-                            <label for="branch1" class="form__label">Branch</label>
-                        </div>
-                        <div class="form__group field">
-                            <input type="text" aria-required="" class="form__field" placeholder="sec" name="sec"
-                                id='sec1' required />
-                            <label for="sec1" class="form__label">Sec</label>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="form__group field">
-                            <input type="input" class="form__field" placeholder="phone-no" name="phone-no"
-                                id='phno1' required />
-                            <label for="phone-no1" class="form__label">Phone no</label>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div class="participants"></div>
         </div>
+
     </div>
 
-    <div class="submit">Submit</div>
+    <a class="link" href="About.html"><div class="submit">Submit</div></a>
 
     <footer>
         <div class="text"><strong>Designed and Developed by Web Designers | IEEE - VBIT SB</strong></div>
         <div class="sm-logos">
-            <a href="https://www.facebook.com/ieeevbitsb" target="_blank"><img src="fb.png" alt="facebook"></a>
-            <a href="https://instagram.com/ieee_vbitsb" target="_blank"><img src="ig.png" alt="instagram"></a>
-            <a href="https://www.linkedin.com/company/ieee-vbit-sb/" target="_blank"><img src="lin.png"
-                    alt="linked-in"></a>
+            <a href="https://www.facebook.com/ieeevbitsb" target="_blank"><img src="/Assets/images/fb.png" alt="facebook"></a>
+            <a href="https://instagram.com/ieee_vbitsb" target="_blank"><img src="/Assets/images/ig.png" alt="instagram"></a>
+            <a href="https://www.linkedin.com/company/ieee-vbit-sb/" target="_blank"><img src="/Assets/images/lin.png" alt="linked-in"></a>
         </div>
     </footer>
-
-    <!-- Add Firebase libraries -->
-    <script src="config.js"></script>
-    <script>
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        const firebaseConfig = {
-            apiKey: config.API_KEY,
-            authDomain: config.AUTH_DOMAIN,
-            projectId: config.PROJECT_ID,
-            storageBucket: config.STORAGE_BUCKET,
-            messagingSenderId: config.MESSAGE_SENDER_ID,
-            appId: config.APP_ID,
-            measurementId: config.MESSUREMENT_ID
-        };
-        firebase.initializeApp(firebaseConfig);
-        const db = firebase.firestore();
-        db.settings({ timestampsInSnapshots: true });
-    </script>
-    <script src="index.js"></script>
-    <script src="ts-1.js"></script>
+    <script src="/Assets/javaScript/config.js"></script>
+    <script src="/Assets/javaScript/index.js"></script>
 </body>
 
 </html>

@@ -106,14 +106,14 @@ document.querySelector(".submit").addEventListener("click", async (e) => {
   for (let m = 1; m <= teamSize; m++) {
     emails.push(document.querySelector(`#p${m}f1`).value.toLowerCase());
   }
-  teams
+  await teams
     .add({
       teamSize: teamSize,
     })
     .then((doc) => {
       localStorage.setItem("teamId", doc.id);
     });
-  await sleep(5000);
+  await sleep(1000);
   let teamId = localStorage.getItem("teamId");
   let dict = {
     0: "name",
@@ -138,11 +138,13 @@ document.querySelector(".submit").addEventListener("click", async (e) => {
     }
   }
   teams.doc(teamId).set(data, { merge: true });
-  mail.doc(teamId).set({
+  await mail.doc(teamId).set({
     to: emails,
     message: {
       subject: "Hello from Sai!!!",
-      text: "This is a plain text.",
+      text: "This is a plain text."
     },
   });
+  setTimeout(1000,alert(teamId));
+  window.location.href = "About.html";
 });

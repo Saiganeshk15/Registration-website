@@ -141,10 +141,16 @@ document.querySelector(".submit").addEventListener("click", async (e) => {
   await mail.doc(teamId).set({
     to: emails,
     message: {
+      attachments : [
+        {
+          filename : 'invitaion.pdf',
+          href : 'https://firebasestorage.googleapis.com/v0/b/codequest-7ac27.appspot.com/o/invitation.pdf?alt=media',
+
+        }
+      ],
       subject: "Hello from Sai!!!",
-      text: "This is a plain text."
-    },
+      html: `<p><a href="https://drive.google.com/file/d/18MKO7nuNDOZswFVoDsVRVrU4hADcWJUB/view?usp=sharing">Click here</a> to download Invitaion.</p>`
+    }
   });
-  setTimeout(1000,alert(teamId));
   window.location.href = "About.html";
 });

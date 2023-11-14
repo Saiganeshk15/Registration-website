@@ -70,10 +70,17 @@ function createParticipantDOM(participantCount) {
       label.textContent = fieldNames[j];
       label.setAttribute("for", `p${i}f${j}`);
       label.classList.add("form__label");
+      
+      const br = document.createElement("br");
+      const war = document.createElement("p");
+      war.textContent = `Enter valid ${fieldNames[j]}`;
+      war.id = `p${i}w${j}`;
+      war.classList.add("war");
 
       formGroup.appendChild(input);
       formGroup.appendChild(label);
       column.appendChild(formGroup);
+      column.appendChild(war);
       fieldsContainer.appendChild(column);
     }
 
@@ -106,14 +113,7 @@ document.querySelector(".submit").addEventListener("click", async (e) => {
   for (let m = 1; m <= teamSize; m++) {
     emails.push(document.querySelector(`#p${m}f1`).value.toLowerCase());
   }
-  await teams
-    .add({
-      teamSize: teamSize,
-    })
-    .then((doc) => {
-      localStorage.setItem("teamId", doc.id);
-    });
-  await sleep(1000);
+  
   let teamId = localStorage.getItem("teamId");
   let dict = {
     0: "name",
@@ -129,6 +129,11 @@ document.querySelector(".submit").addEventListener("click", async (e) => {
     for (let j = 0; j <= 6; j++) {
       key = `p${i}${dict[j]}`;
       let values;
+      document.querySelector(`#p${i}w${j}`).classList.remove("war-active");
+      if (document.querySelector(`#p${i}f${j}`).value == "") {
+        document.querySelector(`#p${i}w${j}`).classList.add("war-active");
+        var flag = 1;
+      }
       if (j == 3 || j == 4 || j == 5) {
         values = document.querySelector(`#p${i}f${j}`).value.toUpperCase();
       } else {
@@ -137,6 +142,18 @@ document.querySelector(".submit").addEventListener("click", async (e) => {
       data[`p${i}${dict[j]}`] = values;
     }
   }
+  if (flag) {
+    return;
+  }
+  await teams
+    .add({
+      teamSize: teamSize,
+      timeStamp: firebase.firestore.FieldValue.serverTimestamp()
+    })
+    .then((doc) => {
+      localStorage.setItem("teamId", doc.id);
+    });
+  await sleep(4000);
   teams.doc(teamId).set(data, { merge: true });
   await mail.doc(teamId).set({
     to: emails,

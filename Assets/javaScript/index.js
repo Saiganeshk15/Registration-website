@@ -17,7 +17,7 @@ function selectNumber(number) {
   dropdownSelect.innerHTML = "Team size : " + number;
   dropdownOptions.style.display = "none";
   form.innerHTML = "";
-  createParticipantDOM(number);
+  createParticipantSections(number);
 }
 
 // Close the dropdown if the user clicks outside of it
@@ -27,69 +27,95 @@ window.addEventListener("click", function (event) {
   }
 });
 // Function to generate the virtual DOM for participants
-function createParticipantDOM(participantCount) {
-  const form = document.querySelector(".participants");
+function createParticipantSections(numParticipants) {
+  const participantsContainer = document.querySelector('.participants');
 
-  for (let i = 1; i <= participantCount; i++) {
-    const participantContainer = document.createElement("div");
-    participantContainer.classList.add(`participant-${i}`);
+  for (let i = 1; i <= numParticipants; i++) {
+      const participantSection = document.createElement('div');
+      participantSection.classList.add(`participant-${i}`);
 
-    const participantLabel = document.createElement("label");
-    participantLabel.textContent = `Participant ${i}:`;
+      participantSection.innerHTML = `
+          <label>Participant ${i}:</label>
+          <div class="fields">
+              <div class="column">
+                  <div class="form__group field">
+                      <input type="text" class="form__field" placeholder="Name" name="participant-${i}-name" id="p${i}f0" required="">
+                      <label for="p${i}f0" class="form__label">Name</label>
+                  </div>
+                  <p id="p${i}w0" class="war">Enter valid Name</p>
+              </div>
+              <div class="column">
+                  <div class="form__group field">
+                      <input type="text" class="form__field" placeholder="Email" name="participant-${i}-email" id="p${i}f1" required="">
+                      <label for="p${i}f1" class="form__label">Email</label>
+                  </div>
+                  <p id="p${i}w1" class="war">Enter valid Email</p>
+              </div>
+              <div class="column">
+                  <div class="form__group field">
+                      <label class="form__label" for="p${i}f2">Year</label>
+                      <select class="form__field" id="p${i}f2" name="participant-${i}-year">
+                          <option class="dropdown-option" value="">Select</option>
+                          <option class="dropdown-option" value="1">1</option>
+                          <option class="dropdown-option" value="2">2</option>
+                          <option class="dropdown-option" value="3">3</option>
+                          <option class="dropdown-option" value="4">4</option>
+                      </select>
+                  </div>
+                  <p id="p${i}w2" class="war">Select valid Year</p>
+              </div>
+              <div class="column">
+                  <div class="form__group field">
+                      <input type="text" class="form__field" placeholder="Roll No" name="participant-${i}-roll-no" id="p${i}f3" required="">
+                      <label for="p${i}f3" class="form__label">Roll No</label>
+                  </div>
+                  <p id="p${i}w3" class="war">Enter valid Roll No</p>
+              </div>
+              <div class="column">
+                  <div class="form__group field">
+                      <label class="form__label" for="p${i}f4">Branch</label>
+                      <select class="form__field" id="p${i}f4" name="participant-${i}-branch">
+                          <option class="dropdown-option" value="">Select</option>
+                          <option class="dropdown-option" value="CIVIL">CIVIL</option>
+                          <option class="dropdown-option" value="CSB">CSB</option>
+                          <option class="dropdown-option" value="CSC">CSC</option>
+                          <option class="dropdown-option" value="CSD">CSD</option>
+                          <option class="dropdown-option" value="CSM">CSM</option>
+                          <option class="dropdown-option" value="ECE">ECE</option>
+                          <option class="dropdown-option" value="EEE">EEE</option>
+                          <option class="dropdown-option" value="IT">IT</option>
+                          <option class="dropdown-option" value="MECH">MECH</option>
+                      </select>
+                  </div>
+                  <p id="p${i}w4" class="war">Select valid Branch</p>
+              </div>
+              <div class="column">
+                  <div class="form__group field">
+                      <label class="form__label" for="p${i}f5">Section</label>
+                      <select class="form__field" id="p${i}f5" name="participant-${i}-section">
+                          <option class="dropdown-option" value="">Select</option>
+                          <option class="dropdown-option" value="A">A</option>
+                          <option class="dropdown-option" value="B">B</option>
+                          <option class="dropdown-option" value="C">C</option>
+                          <option class="dropdown-option" value="D">D</option>
+                      </select>
+                  </div>
+                  <p id="p${i}w5" class="war">Select valid Section</p>
+              </div>
+              <div class="column">
+                  <div class="form__group field">
+                      <input type="text" class="form__field" placeholder="Phone No" name="participant-${i}-phone-no" id="p${i}f6" required="">
+                      <label for="p${i}f6" class="form__label">Phone No</label>
+                  </div>
+                  <p id="p${i}w6" class="war">Enter valid Phone No</p>
+              </div>
+          </div>
+      `;
 
-    const fieldsContainer = document.createElement("div");
-    fieldsContainer.classList.add("fields");
-
-    const fieldNames = [
-      "Name",
-      "Email",
-      "Year",
-      "Roll No",
-      "Branch",
-      "Sec",
-      "Phone No",
-    ];
-    for (let j = 0; j < fieldNames.length; j++) {
-      const column = document.createElement("div");
-      column.classList.add("column");
-
-      const formGroup = document.createElement("div");
-      formGroup.classList.add("form__group", "field");
-
-      const input = document.createElement("input");
-      input.type = "text";
-      input.classList.add("form__field");
-      input.placeholder = fieldNames[j];
-      input.name = `participant-${i}-${fieldNames[j]
-        .replace(/\s/g, "-")
-        .toLowerCase()}`;
-      input.id = `p${i}f${j}`;
-      input.required = true;
-
-      const label = document.createElement("label");
-      label.textContent = fieldNames[j];
-      label.setAttribute("for", `p${i}f${j}`);
-      label.classList.add("form__label");
-      
-      const br = document.createElement("br");
-      const war = document.createElement("p");
-      war.textContent = `Enter valid ${fieldNames[j]}`;
-      war.id = `p${i}w${j}`;
-      war.classList.add("war");
-
-      formGroup.appendChild(input);
-      formGroup.appendChild(label);
-      column.appendChild(formGroup);
-      column.appendChild(war);
-      fieldsContainer.appendChild(column);
-    }
-
-    participantContainer.appendChild(participantLabel);
-    participantContainer.appendChild(fieldsContainer);
-    form.appendChild(participantContainer);
+      participantsContainer.appendChild(participantSection);
   }
 }
-createParticipantDOM(1);
+createParticipantSections(1);
 
 const firebaseConfig = {
   apiKey: config.API_KEY,

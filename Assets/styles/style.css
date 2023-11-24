@@ -53,54 +53,53 @@ body{
 dropdown
 ************/
 .dropdown {
-    position: relative;
-    display: inline-block;
-    padding-left: 7%;
+  position: relative;
+  display: inline-block;
+  padding-left: 7%;
 }
 
 .dropdown-select {
-    padding: 10px;
-    border: 2px solid #3498db;
-    border-radius: 5px;
-    background-color: #00B4D8;
-    color: black;
-    width: 340px;
-    padding-left: 10%;
-    margin: 5% 0%;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
+  padding: 12px;
+  border: 2px solid black;
+  border-radius: 8px;
+  background-color: #00B4D8;
+  width: 300px;
+  color: black;
+  padding-left: 10%;
+  margin: 5% 0%;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 .dropdown-options {
-    display: none;
-    position: absolute;
-    color: black;
-    width: 340px;
-    z-index: 1;
-    overflow: hidden;
+  display: none;
+  position: absolute;
+  color: black;
+  width: 300px;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .dropdown-option {
-    padding: 10px;
-    cursor: pointer;
-    background-color: #00B4D8;
-    margin-bottom: 1%;
-    padding-left: 10%;
-    border: 2px solid black;
-    transition: background-color 0.2s;
-    border-radius: 10px;
+  padding: 12px;
+  cursor: pointer;
+  background-color: #00B4D8;
+  margin-bottom: 1%;
+  padding-left: 10%;
+  border: 2px solid black;
+  transition: background-color 0.2s;
+  border-radius: 8px;
+  color: black;
 }
 
-.arrow{
-    position: relative;
-    right: -50%;
-    transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
+/* Hover effect for options */
+.dropdown-option:hover {
+  background-color: #0077B6;
 }
+
 
 /******************
 inputfield
@@ -109,7 +108,7 @@ inputfield
 .form__group {
     position: relative;
     padding: 15px 0 0;
-    border: 2px solid white;
+    border: 2px solid black;
     background-color: #00B4D8;
     margin-top: 3%;
     height: 60px;
@@ -126,12 +125,15 @@ inputfield
     padding-left: 5%;
     font-size: 1.3rem;
     color: black;
-    padding: 7px 0;
+    padding: 7px 5%;
     background: transparent;
     transition: border-color 0.2s;
   }
   .form__field::placeholder {
     color: transparent;
+  }
+  .form__label{
+    color: black;
   }
   .form__field:placeholder-shown ~ .form__label {
     font-size: 1.3rem;

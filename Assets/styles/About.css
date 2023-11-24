@@ -116,22 +116,27 @@ a{
 }
 
 footer{
-    display: flex;
-    height: 60px;
-    width: 100%;
-    background-color: #938D8D;
-    align-items: center;
-    justify-content: space-around;
-  }
-  .text{
-    font-size: 22px;
-  }
-  .sm-logos img{
-    height: 40px;
-    width: 40px;
-  }
+  display: flex;
+  height: 60px;
+  width: 100%;
+  background-color:#202332;
+  align-items: center;
+  justify-content: space-around;
+}
+.text{
+  font-size: 17px;
+}
+.foot-text-color{
+  color: #ffffff87;
+}
+.sm-logos img{
+  height: 25px;
+  width: 25px;
+}
+.logo-gap{
+  margin : 0px 10px 0px 10px ;
+}
 
-  
 /************************
 RESPONSIVE STYLES
 *************************/
@@ -147,7 +152,7 @@ RESPONSIVE STYLES
         height: 70px;
     }
   }
-  @media screen and (max-width: 690px) and (min-width: 428px){
+  @media screen and (max-width: 690px) and (min-width: 427px){
     .events{
       display: flex;
       flex-direction: column;
@@ -159,25 +164,33 @@ RESPONSIVE STYLES
       padding: 2% 0%;
   }
   .text{
-    font-size: 18px;
+    font-size: 10px;
   }
   .sm-logos img {
-    height: 30px;
-    width: 30px;
+    height: 15px;
+    width: 15px;
+  }
+  .submit{
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
   }
   }
   @media screen and (max-width: 427px) and (min-width: 376px){
     .text{
-      font-size: 12px;
+      font-size: 10px;
     }
     .submit{
       height: 50px;
       width: 200px;
     }
     .sm-logos img {
-      height: 20px;
-      width: 20px;
+      width: 15px;
+      height:15px;
     }
+    .logo-gap {
+      margin: 0px 7px 0px px;
+  }
     .mb-head,.ue-head{
       height: 40px;
       font-size: 20px;
@@ -195,7 +208,7 @@ RESPONSIVE STYLES
   }
   @media screen and (max-width: 376px){
     .text{
-      font-size: 10px;
+      font-size: 8px;
     }
     .logo{
       height: 80px;
@@ -207,9 +220,12 @@ RESPONSIVE STYLES
         font-size: 15px;
     }
     .sm-logos img {
-      height: 10px;
-      width: 10px;
+      height: 15px;
+      width: 15px;
     }
+    .logo-gap {
+      margin: 0px 5px 0px 5px;
+  }
     .mb-head,.ue-head{
         height: 40px;
         font-size: 20px;

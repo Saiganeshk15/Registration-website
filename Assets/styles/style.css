@@ -99,7 +99,9 @@ dropdown
 .dropdown-option:hover {
   background-color: #0077B6;
 }
-
+select{
+  margin-top: 10px;
+}
 
 /******************
 inputfield
@@ -125,7 +127,7 @@ inputfield
     padding-left: 5%;
     font-size: 1.3rem;
     color: black;
-    padding: 7px 5%;
+    padding: 0px 5%;
     background: transparent;
     transition: border-color 0.2s;
   }
@@ -153,7 +155,7 @@ inputfield
   }
   
   .form__field:focus {
-    padding-bottom: 6px;
+    padding-bottom: 0px;
     padding-left: 5%;
     background-color: transparent;
     border-width: 3px;
@@ -277,11 +279,11 @@ RESPONSIVE STYLES
 *************************/
 @media screen and (max-width: 768px) and (min-width: 426px){
   .text{
-    font-size: 12px;
+    font-size: 10px;
   }
   .sm-logos img {
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
   }
   .hero-section p {
     font-size: 20px;
@@ -289,7 +291,7 @@ RESPONSIVE STYLES
 }
 @media screen and (max-width: 427px) and (min-width: 376px){
   .text{
-    font-size: 11px;
+    font-size: 10px;
   }
   .fields{
     display: block;
@@ -311,8 +313,11 @@ RESPONSIVE STYLES
     width: 200px;
   }
   .sm-logos img {
-    height: 20px;
-    width: 20px;
+    height: 15px;
+    width: 15px;
+  }
+  .logo-gap {
+    margin: 0px 7px 0px px;
   }
   .hero-section p {
     font-size: 20px;
@@ -331,7 +336,7 @@ RESPONSIVE STYLES
 }
 @media screen and (max-width: 376px){
   .text{
-    font-size: 10px;
+    font-size: 8px;
   }
   .fields{
     display: block;

@@ -7,25 +7,21 @@ async function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-function toggleDropdown() {
-  dropdownOptions.style.display =
-    dropdownOptions.style.display === "block" ? "none" : "block";
-}
+// function selectNumber(number) {
+//   console.log(number)
+//   teamSize = number;
+//   dropdownSelect.innerHTML = "Team size : " + number;
+//   form.innerHTML = "";
+//   createParticipantSections(number);
+// }
 
-function selectNumber(number) {
-  teamSize = number;
-  dropdownSelect.innerHTML = "Team size : " + number;
-  dropdownOptions.style.display = "none";
+document.querySelector('select#teamsize').addEventListener('change' , (e) => {
+  console.log(e.target.value);
+  teamSize = e.target.value;
   form.innerHTML = "";
-  createParticipantSections(number);
-}
-
-// Close the dropdown if the user clicks outside of it
-window.addEventListener("click", function (event) {
-  if (!event.target.matches(".dropdown-select")) {
-    dropdownOptions.style.display = "none";
-  }
+  createParticipantSections(teamSize);
 });
+
 // Function to generate the virtual DOM for participants
 function createParticipantSections(numParticipants) {
   const participantsContainer = document.querySelector('.participants');
@@ -162,8 +158,18 @@ document.querySelector(".submit").addEventListener("click", async (e) => {
       }
       if (j == 3 || j == 4 || j == 5) {
         values = document.querySelector(`#p${i}f${j}`).value.toUpperCase();
-      } else {
+      }
+       else {
         values = document.querySelector(`#p${i}f${j}`).value.toLowerCase();
+      }
+      if ( j == 3 ) {
+        if ( values.length != 10 || (values[2] != 'P' || values[3] != '6' )) {
+          document.querySelector(`#p${i}w${j}`).classList.add("war-active");
+          var flag = 1;
+        }
+      }
+      if (j == 4) {
+        console.log(teams.where("p1rollno", "==", values).get())
       }
       data[`p${i}${dict[j]}`] = values;
     }

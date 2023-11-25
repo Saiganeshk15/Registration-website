@@ -45,7 +45,7 @@ body{
     background-color: #03045E;
     padding: 2% 3%;
     color: white;
-    margin: 2% 5%;
+    margin: 6% 2%;
     border-radius: 33px;
     font-size: 22px;
 }
@@ -227,6 +227,26 @@ select:-webkit-autofill:focus {
     margin-bottom: 3%;
     margin-top: 3%;
   }
+  /* .parti-marg{
+    margin-top: 10px;
+  } */
+  .participant-1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .participant-2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .participant-3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .participant-4{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
   .column{
     display: flex;
     flex-wrap: wrap;
@@ -483,6 +503,6 @@ footer{
   margin-left: 7%;
 }
 footer{
-  height: 40px;
+  height: 60px;
 }
 }

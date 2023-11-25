@@ -15,7 +15,7 @@ async function sleep(ms) {
 //   createParticipantSections(number);
 // }
 
-document.querySelector('select#teamsize').addEventListener('change' , (e) => {
+document.querySelector('select#teamsize').addEventListener('change', (e) => {
   console.log(e.target.value);
   teamSize = e.target.value;
   form.innerHTML = "";
@@ -27,11 +27,11 @@ function createParticipantSections(numParticipants) {
   const participantsContainer = document.querySelector('.participants');
 
   for (let i = 1; i <= numParticipants; i++) {
-      const participantSection = document.createElement('div');
-      participantSection.classList.add(`participant-${i}`);
+    const participantSection = document.createElement('div');
+    participantSection.classList.add(`participant-${i}`);
 
-      participantSection.innerHTML = `
-          <label>Participant ${i}:</label>
+    participantSection.innerHTML = `
+          <label class="parti-marg">Participant ${i}:</label>
           <div class="fields">
               <div class="column">
                   <div class="form__group field">
@@ -108,7 +108,7 @@ function createParticipantSections(numParticipants) {
           </div>
       `;
 
-      participantsContainer.appendChild(participantSection);
+    participantsContainer.appendChild(participantSection);
   }
 }
 createParticipantSections(1);
@@ -135,7 +135,7 @@ document.querySelector(".submit").addEventListener("click", async (e) => {
   for (let m = 1; m <= teamSize; m++) {
     emails.push(document.querySelector(`#p${m}f1`).value.toLowerCase());
   }
-  
+
   let teamId = localStorage.getItem("teamId");
   let dict = {
     0: "name",
@@ -159,11 +159,11 @@ document.querySelector(".submit").addEventListener("click", async (e) => {
       if (j == 3 || j == 4 || j == 5) {
         values = document.querySelector(`#p${i}f${j}`).value.toUpperCase();
       }
-       else {
+      else {
         values = document.querySelector(`#p${i}f${j}`).value.toLowerCase();
       }
-      if ( j == 3 ) {
-        if ( values.length != 10 || (values[2] != 'P' || values[3] != '6' )) {
+      if (j == 3) {
+        if (values.length != 10 || (values[2] != 'P' || values[3] != '6')) {
           document.querySelector(`#p${i}w${j}`).classList.add("war-active");
           var flag = 1;
         }
@@ -190,10 +190,10 @@ document.querySelector(".submit").addEventListener("click", async (e) => {
   await mail.doc(teamId).set({
     to: emails,
     message: {
-      attachments : [
+      attachments: [
         {
-          filename : 'invitaion.pdf',
-          href : 'https://firebasestorage.googleapis.com/v0/b/codequest-7ac27.appspot.com/o/invitation.pdf?alt=media',
+          filename: 'invitaion.pdf',
+          href: 'https://firebasestorage.googleapis.com/v0/b/codequest-7ac27.appspot.com/o/invitation.pdf?alt=media',
 
         }
       ],

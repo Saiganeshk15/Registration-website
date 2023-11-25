@@ -100,7 +100,17 @@ dropdown
   background-color: #0077B6;
 }
 select{
-  margin-top: 10px;
+  margin-top: 5px;
+}
+#teamsize{
+  margin: 0% 0%;
+}
+.ts{
+  background-color: #00B4D8;
+}
+.tsp{
+  width: 30%;
+  margin: 2% 0%;
 }
 
 /******************
@@ -288,6 +298,9 @@ RESPONSIVE STYLES
   .hero-section p {
     font-size: 20px;
   }
+  .tsp{
+    width: 50%;
+  }
 }
 @media screen and (max-width: 427px) and (min-width: 376px){
   .text{
@@ -332,6 +345,9 @@ RESPONSIVE STYLES
     font-size: 25px!important;
   }h2{
     font-size: 22px!important;
+  }
+  .tsp{
+    margin-left: 7%;
   }
 }
 @media screen and (max-width: 376px){
@@ -381,6 +397,9 @@ RESPONSIVE STYLES
   }
   .form{
     border-radius: 15px;
+}
+.tsp{
+  margin-left: 7%;
 }
 footer{
   height: 40px;

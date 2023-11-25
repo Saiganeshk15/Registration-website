@@ -33,13 +33,14 @@
         <div class="form">
             <label class="team-size" for="Team Size">Team Size :</label>
             <br>
-            <div class="dropdown">
-                <div class="dropdown-select" onclick="toggleDropdown()">Team size : 1</div>
-                <div class="dropdown-options" id="dropdownOptions">
-                    <div class="dropdown-option" onclick="selectNumber(1)">1</div>
-                    <div class="dropdown-option" onclick="selectNumber(2)">2</div>
-                    <div class="dropdown-option" onclick="selectNumber(3)">3</div>
-                    <div class="dropdown-option" onclick="selectNumber(4)">4</div>
+            <div class="column tsp">
+                <div class="form__group field">
+                    <select class="form__field" id="teamsize" name="teamsize">
+                        <option class="dropdown-option ts" value="1" >Team size: 1</option>
+                        <option class="dropdown-option ts" value="2" >Team size: 2</option>
+                        <option class="dropdown-option ts" value="3" >Team size: 3</option>
+                        <option class="dropdown-option ts" value="4" >Team size: 4</option>
+                    </select>
                 </div>
             </div>
             <div class="participants"></div>

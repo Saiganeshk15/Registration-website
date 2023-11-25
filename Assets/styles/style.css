@@ -268,9 +268,17 @@ select:-webkit-autofill:focus {
     transition-duration: 500ms;
 }
 
-footer{
+/*footer{
   display: flex;
   height: 60px;
+  width: 100%;
+  background-color:#202332;
+  align-items: center;
+  justify-content: space-around;
+}*/
+footer{
+  display: flex;
+  height: 75px;
   width: 100%;
   background-color:#202332;
   align-items: center;

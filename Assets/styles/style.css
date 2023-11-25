@@ -272,17 +272,18 @@ footer{
   justify-content: space-around;
 }
 .text{
-  font-size: 17px;
+  font-size: 15px;
+  font-weight: lighter;
 }
 .foot-text-color{
   color: #ffffff87;
 }
 .sm-logos img{
-  height: 25px;
-  width: 25px;
+  height: 23px;
+  width: 23px;
 }
 .logo-gap{
-  margin : 0px 10px 0px 10px ;
+  margin : 0px 8px 0px 8px ;
 } 
 
 /************************
@@ -290,7 +291,8 @@ RESPONSIVE STYLES
 *************************/
 @media screen and (max-width: 768px) and (min-width: 426px){
   .text{
-    font-size: 10px;
+    font-size: 13px;
+    
   }
   .sm-logos img {
     height: 20px;
@@ -302,10 +304,14 @@ RESPONSIVE STYLES
   .tsp{
     width: 50%;
   }
+  .logo-gap {
+    margin: 0px 5px 0px 5px;
+  }
 }
 @media screen and (max-width: 427px) and (min-width: 376px){
   .text{
     font-size: 10px;
+    
   }
   .fields{
     display: block;
@@ -331,7 +337,7 @@ RESPONSIVE STYLES
     width: 15px;
   }
   .logo-gap {
-    margin: 0px 7px 0px px;
+    margin: 0px 3px 0px 3px;
   }
   .hero-section p {
     font-size: 20px;
@@ -354,6 +360,7 @@ RESPONSIVE STYLES
 @media screen and (max-width: 376px){
   .text{
     font-size: 8px;
+    
   }
   .fields{
     display: block;
@@ -364,6 +371,9 @@ RESPONSIVE STYLES
   .logo{
     height: 80px;
     width: 80px;
+  }
+  .logo-gap {
+    margin: 0px 3px 0px 3px;
   }
   .dropdown-select{
     width: 240px;
@@ -379,8 +389,8 @@ RESPONSIVE STYLES
     width: 200px;
   }
   .sm-logos img {
-    height: 10px;
-    width: 10px;
+    height: 12px;
+    width: 12px;
   }
   .hero-section p {
     font-size: 18px;

@@ -57,8 +57,9 @@ body{
     padding-bottom: 1%;
 }
 .contact{
-  text-align: right;
+  text-align: left;
   margin: auto;
+  width: fit-content;
   display: flex;
   justify-content: center;
   border-radius: 25px;

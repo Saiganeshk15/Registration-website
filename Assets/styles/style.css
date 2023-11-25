@@ -220,10 +220,13 @@ select:-webkit-autofill:focus {
   }
 
 
-  .participant{
+ /* .participant{
     margin-bottom: 3%;
+  }*/
+.participant{
+    margin-bottom: 3%;
+    margin-top: 3%;
   }
-
   .column{
     display: flex;
     flex-wrap: wrap;

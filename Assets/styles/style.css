@@ -1,5 +1,10 @@
-*{
+/**{
     margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}*/
+*{
+    margin: 5px;
     padding: 0px;
     box-sizing: border-box;
 }
@@ -263,9 +268,17 @@ select:-webkit-autofill:focus {
     transition-duration: 500ms;
 }
 
-footer{
+/*footer{
   display: flex;
   height: 60px;
+  width: 100%;
+  background-color:#202332;
+  align-items: center;
+  justify-content: space-around;
+}*/
+footer{
+  display: flex;
+  height: 75px;
   width: 100%;
   background-color:#202332;
   align-items: center;
@@ -357,6 +370,60 @@ RESPONSIVE STYLES
     margin-left: 7%;
   }
 }
+/*@media screen and (max-width: 376px){
+  .text{
+    font-size: 8px;
+  }
+  .fields{
+    display: block;
+  }
+  .form__field{
+    height: 25px;
+  }
+  .logo{
+    height: 80px;
+    width: 80px;
+  }
+  .dropdown-select{
+    width: 240px;
+  }
+  .dropdown-option{
+    width: 240px;
+  }
+  .arrow{
+    right: -32%;
+  }
+  .submit{
+    height: 50px;
+    width: 200px;
+  }
+  .sm-logos img {
+    height: 10px;
+    width: 10px;
+  }
+  .hero-section p {
+    font-size: 18px;
+  }
+  .form__group{
+    width: 235px;
+  }
+  .column{
+    display: block;
+  }
+  h1{
+    font-size: 20px!important;
+  }h2{
+    font-size: 18px!important;
+  }
+  .form{
+    border-radius: 15px;
+}
+.tsp{
+  margin-left: 7%;
+}
+footer{
+  height: 40px;
+}*/
 @media screen and (max-width: 376px){
   .text{
     font-size: 8px;

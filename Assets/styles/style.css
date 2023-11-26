@@ -219,13 +219,8 @@ select:-webkit-autofill:focus {
     background-color: transparent;
   }
 
-
- /* .participant{
-    margin-bottom: 3%;
-  }*/
-.participant{
-    margin-bottom: 3%;
-    margin-top: 3%;
+  .participants > div{
+    margin-bottom: 2%;
   }
   .column{
     display: flex;

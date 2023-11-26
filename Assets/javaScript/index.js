@@ -15,6 +15,8 @@ async function sleep(ms) {
 //   createParticipantSections(number);
 // }
 
+
+
 document.querySelector('select#teamsize').addEventListener('change', (e) => {
   console.log(e.target.value);
   teamSize = e.target.value;

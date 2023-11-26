@@ -266,17 +266,9 @@ select:-webkit-autofill:focus {
     transition-duration: 500ms;
 }
 
-/*footer{
-  display: flex;
-  height: 60px;
-  width: 100%;
-  background-color:#202332;
-  align-items: center;
-  justify-content: space-around;
-}*/
 footer{
   display: flex;
-  height: 75px;
+  height: 50px;
   width: 100%;
   background-color:#202332;
   align-items: center;
@@ -293,7 +285,7 @@ footer{
   width: 25px;
 }
 .logo-gap{
-  margin : 0px 10px 0px 10px ;
+  margin : 0px 5px;
 } 
 
 /************************
@@ -301,7 +293,7 @@ RESPONSIVE STYLES
 *************************/
 @media screen and (max-width: 768px) and (min-width: 426px){
   .text{
-    font-size: 10px;
+    font-size: 12px;
   }
   .sm-logos img {
     height: 20px;
@@ -316,7 +308,10 @@ RESPONSIVE STYLES
 }
 @media screen and (max-width: 427px) and (min-width: 376px){
   .text{
-    font-size: 10px;
+    font-size: 11px;
+  }
+  .logo-gap{
+    margin: 0px 3px;
   }
   .fields{
     display: block;
@@ -340,9 +335,6 @@ RESPONSIVE STYLES
   .sm-logos img {
     height: 15px;
     width: 15px;
-  }
-  .logo-gap {
-    margin: 0px 7px 0px px;
   }
   .hero-section p {
     font-size: 20px;
@@ -418,7 +410,7 @@ footer{
 }*/
 @media screen and (max-width: 376px){
   .text{
-    font-size: 8px;
+    font-size: 9px;
   }
   .fields{
     display: block;
@@ -444,8 +436,11 @@ footer{
     width: 200px;
   }
   .sm-logos img {
-    height: 10px;
-    width: 10px;
+    height: 15px;
+    width: 15px;
+  }
+  .logo-gap{
+    margin: 0px 3px;
   }
   .hero-section p {
     font-size: 18px;
@@ -468,6 +463,6 @@ footer{
   margin-left: 7%;
 }
 footer{
-  height: 40px;
+  height: 45px;
 }
 }

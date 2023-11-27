@@ -268,7 +268,7 @@ select:-webkit-autofill:focus {
 
 footer{
   display: flex;
-  height: 50px;
+  height: 90px;
   width: 100%;
   background-color:#202332;
   align-items: center;
@@ -285,7 +285,7 @@ footer{
   width: 25px;
 }
 .logo-gap{
-  margin : 0px 5px;
+  margin : 0px 7px;
 } 
 
 /************************
@@ -293,8 +293,10 @@ RESPONSIVE STYLES
 *************************/
 @media screen and (max-width: 768px) and (min-width: 426px){
   .text{
-    font-size: 12px;
-  }
+    font-size: 15px;
+    margin-top: 5px;
+}
+  
   .sm-logos img {
     height: 20px;
     width: 20px;
@@ -305,28 +307,40 @@ RESPONSIVE STYLES
   .tsp{
     width: 50%;
   }
+  footer{
+    height: 80px;
+    flex-direction: column-reverse;
+    justify-content: center;
+  
+  }
 }
 @media screen and (max-width: 427px) and (min-width: 400px){
   .text{
-    font-size: 13px!important;
-  }
+    font-size: 15px!important;
+    margin-top: 5px;
+}
   .sm-logos img {
-    width: 18px!important;
-    height: 18px!important;
+    width: 20px!important;
+    height: 20px!important;
   }
 }
 @media screen and (max-width: 427px) and (min-width: 376px){
   .text{
-    font-size: 11px;
+    font-size: 15px;
   }
   .logo-gap{
-    margin: 0px 3px;
+    margin: 0px 5px;
   }
   .fields{
     display: block;
   }
   .form__field{
     height: 30px;
+  }
+  footer{
+    flex-direction: column-reverse;
+    justify-content: center;
+  
   }
   .dropdown-select{
     width: 300px;
@@ -419,7 +433,9 @@ footer{
 }*/
 @media screen and (max-width: 376px){
   .text{
-    font-size: 9px;
+    font-size: 15px;
+    margin-top: 5px;
+    text-align: center;
   }
   .fields{
     display: block;
@@ -445,11 +461,11 @@ footer{
     width: 200px;
   }
   .sm-logos img {
-    height: 15px;
-    width: 15px;
+    height: 22px;
+    width: 22px;
   }
   .logo-gap{
-    margin: 0px 3px;
+    margin: 0px 4px;
   }
   .hero-section p {
     font-size: 18px;
@@ -472,6 +488,9 @@ footer{
   margin-left: 7%;
 }
 footer{
-  height: 45px;
+  height: 100px;
+  flex-direction: column-reverse;
+  justify-content: center;
+
 }
 }

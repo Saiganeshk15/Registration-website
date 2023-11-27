@@ -306,6 +306,15 @@ RESPONSIVE STYLES
     width: 50%;
   }
 }
+@media screen and (max-width: 427px) and (min-width: 400px){
+  .text{
+    font-size: 13px!important;
+  }
+  .sm-logos img {
+    width: 18px!important;
+    height: 18px!important;
+  }
+}
 @media screen and (max-width: 427px) and (min-width: 376px){
   .text{
     font-size: 11px;

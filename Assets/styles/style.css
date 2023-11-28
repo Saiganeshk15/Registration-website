@@ -309,7 +309,7 @@ RESPONSIVE STYLES
   }
   footer{
     height: 80px;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
   
   }
@@ -338,7 +338,7 @@ RESPONSIVE STYLES
     height: 30px;
   }
   footer{
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
   
   }

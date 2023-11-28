@@ -489,7 +489,7 @@ footer{
 }
 footer{
   height: 100px;
-  flex-direction: column-reverse;
+  flex-direction: column;
   justify-content: center;
 
 }

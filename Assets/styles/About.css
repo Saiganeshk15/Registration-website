@@ -138,7 +138,7 @@ a{
 }*/
 footer{
   display: flex;
-  height: 75px;
+  height: 90px;
   width: 100%;
   background-color:#202332;
   align-items: center;
@@ -155,7 +155,7 @@ footer{
   width: 25px;
 }
 .logo-gap{
-  margin : 0px 10px 0px 10px ;
+  margin : 0px 7px ;
 }
 
 /************************
@@ -163,14 +163,21 @@ RESPONSIVE STYLES
 *************************/
 @media screen and (max-width: 768px) and (min-width: 691px){
     .text{
-      font-size: 18px;
+      font-size: 15px;
+      margin-bottom: 10px;
     }
     .sm-logos img {
-      height: 30px;
-      width: 30px;
+      height: 20px;
+      width: 20px;
     }
     .imgs{
         height: 70px;
+    }
+    footer{
+      height: 80px;
+      flex-direction: column;
+      justify-content: center;
+    
     }
   }
   @media screen and (max-width: 690px) and (min-width: 427px){
@@ -197,20 +204,35 @@ RESPONSIVE STYLES
     font-size: 20px;
   }
   }
+  @media screen and (max-width: 427px) and (min-width: 400px){
+    .text{
+      font-size: 15px!important;
+      margin-bottom: 10px;
+  }
+    .sm-logos img {
+      width: 20px!important;
+      height: 20px!important;
+    }
+  }
   @media screen and (max-width: 427px) and (min-width: 376px){
     .text{
-      font-size: 10px;
+      font-size: 15px;
     }
     .submit{
       height: 50px;
       width: 200px;
+    }
+    footer{
+      flex-direction: column;
+      justify-content: center;
+    
     }
     .sm-logos img {
       width: 15px;
       height:15px;
     }
     .logo-gap {
-      margin: 0px 7px 0px px;
+      margin: 0px 5px;
   }
     .mb-head,.ue-head{
       height: 40px;
@@ -247,11 +269,11 @@ RESPONSIVE STYLES
         font-size: 15px;
     }
     .sm-logos img {
-      height: 15px;
-      width: 15px;
+      height: 22px;
+      width: 22px;
     }
     .logo-gap {
-      margin: 0px 5px 0px 5px;
+      margin: 0px 4px;
   }
     .mb-head,.ue-head{
         height: 40px;
@@ -268,6 +290,8 @@ RESPONSIVE STYLES
         padding: 2% 0%;
     }
   footer{
-    height: 40px;
+    height: 100px;
+    flex-direction: column;
+    justify-content: center;
   }
   }

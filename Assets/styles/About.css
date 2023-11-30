@@ -192,11 +192,17 @@ RESPONSIVE STYLES
       padding: 2% 0%;
   }
   .text{
-    font-size: 10px;
+    font-size: 15px;
+    margin-bottom: 10px;
   }
   .sm-logos img {
-    height: 15px;
-    width: 15px;
+    height: 20px;
+    width: 20px;
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .submit{
     width: 250px;
@@ -225,7 +231,6 @@ RESPONSIVE STYLES
     footer{
       flex-direction: column;
       justify-content: center;
-    
     }
     .sm-logos img {
       width: 15px;

@@ -320,16 +320,18 @@ RESPONSIVE STYLES
     margin-bottom: 10px;
 }
   .sm-logos img {
-    width: 20px!important;
-    height: 20px!important;
+    width: 20px;
+    height: 20px;
   }
 }
 @media screen and (max-width: 427px) and (min-width: 376px){
   .text{
-    font-size: 15px;
+       font-size: 13px;
+        text-align: center;
+        margin-bottom: 10px;
   }
   .logo-gap{
-    margin: 0px 5px;
+    margin: 0px 4px;
   }
   .fields{
     display: block;
@@ -357,8 +359,8 @@ RESPONSIVE STYLES
     width: 200px;
   }
   .sm-logos img {
-    height: 15px;
-    width: 15px;
+    height: 22px;
+    width: 22px;
   }
   .hero-section p {
     font-size: 20px;

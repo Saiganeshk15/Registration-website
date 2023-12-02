@@ -52,6 +52,9 @@ body{
 .team-size{
     margin-bottom: 2%;
 }
+.ts{
+  margin-bottom: 4%;
+}
 
 
 /************
@@ -97,7 +100,7 @@ dropdown
   border: 2px solid black;
   transition: background-color 0.2s;
   border-radius: 8px;
-  color: black;
+  color: white;
 }
 
 /* Hover effect for options */
@@ -110,14 +113,6 @@ select{
 #teamsize{
   margin: 0% 0%;
 }
-.ts{
-  background-color: #00B4D8;
-}
-.tsp{
-  width: 30%;
-  margin: 2% 0%;
-}
-
 
 /******************
 inputfield
@@ -126,7 +121,7 @@ inputfield
 .form__group {
     position: relative;
     padding: 15px 0 0;
-    border: 2px solid black;
+    border: none;
     background-color: #00B4D8;
     margin-top: 3%;
     height: 60px;
@@ -142,7 +137,7 @@ inputfield
     outline: 0;
     padding-left: 5%;
     font-size: 1.3rem;
-    color: black;
+    color: white;
     padding: 0px 5%;
     background: transparent;
     transition: border-color 0.2s;
@@ -151,7 +146,7 @@ inputfield
     color: transparent;
   }
   .form__label{
-    color: black;
+    color: white;
   }
   .form__field:placeholder-shown ~ .form__label {
     font-size: 1.3rem;
@@ -304,9 +299,6 @@ RESPONSIVE STYLES
   .hero-section p {
     font-size: 20px;
   }
-  .tsp{
-    width: 50%;
-  }
   footer{
     height: 80px;
     flex-direction: column;
@@ -364,7 +356,7 @@ RESPONSIVE STYLES
     font-size: 20px;
   }
   .form__group{
-    width: 300px;
+    width: 90%;
   }
   .column{
     display: block;
@@ -373,9 +365,6 @@ RESPONSIVE STYLES
     font-size: 25px!important;
   }h2{
     font-size: 22px!important;
-  }
-  .tsp{
-    margin-left: 7%;
   }
 }
 /*@media screen and (max-width: 376px){
@@ -426,9 +415,6 @@ RESPONSIVE STYLES
   .form{
     border-radius: 15px;
 }
-.tsp{
-  margin-left: 7%;
-}
 footer{
   height: 40px;
 }*/
@@ -473,7 +459,7 @@ footer{
     font-size: 18px;
   }
   .form__group{
-    width: 235px;
+    width: 90%;
   }
   .column{
     display: block;
@@ -485,9 +471,6 @@ footer{
   }
   .form{
     border-radius: 15px;
-}
-.tsp{
-  margin-left: 7%;
 }
 footer{
   height: 100px;

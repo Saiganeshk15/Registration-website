@@ -42,7 +42,7 @@ function createParticipantSections(numParticipants) {
               </div>
               <div class="column">
                   <div class="form__group field">
-                      <input type="text" class="form__field" placeholder="Email" name="participant-${i}-email" id="p${i}f1" required="">
+                      <input type="email" class="form__field" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="participant-${i}-email" id="p${i}f1" required="">
                       <label for="p${i}f1" class="form__label">Email</label>
                   </div>
                   <p id="p${i}w1" class="war">Enter valid Email</p>
@@ -100,7 +100,7 @@ function createParticipantSections(numParticipants) {
               </div>
               <div class="column">
                   <div class="form__group field">
-                      <input type="text" class="form__field" placeholder="Phone No" name="participant-${i}-phone-no" id="p${i}f6" required="">
+                      <input type="text" class="form__field" placeholder="Phone No" pattern="^(\+91[\-\s]?)?[0]?(91)?[6789]\d{9}$" name="participant-${i}-phone-no" id="p${i}f6" required="">
                       <label for="p${i}f6" class="form__label">Phone No</label>
                   </div>
                   <p id="p${i}w6" class="war">Enter valid Phone No</p>
@@ -168,8 +168,17 @@ document.querySelector(".submit").addEventListener("click", async (e) => {
           var flag = 1;
         }
       }
-      if (j == 4) {
-        console.log(teams.where("p1rollno", "==", values).get())
+      if (j == 1) {
+        if (!(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(values))) {
+          document.querySelector(`#p${i}w${j}`).classList.add("war-active");
+          var flag = 1;
+        }
+      }
+      else if (j == 6) {
+        if (!(/^(\+91[\-\s]?)?[0]?(91)?[6789]\d{9}$/.test(values))) {
+          document.querySelector(`#p${i}w${j}`).classList.add("war-active");
+          var flag = 1;
+        }
       }
       data[`p${i}${dict[j]}`] = values;
     }

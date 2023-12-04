@@ -112,9 +112,9 @@ dropdown
   background-color: #0077B6;
 }
 
-select {
+/* select {
   margin-top: 5px;
-}
+} */
 
 #teamsize {
   margin: 0% 0%;
@@ -150,7 +150,7 @@ inputfield
     transition: border-color 0.2s;
   }
   .form__field::placeholder {
-    color: transparent;
+    color: rgb(255, 255, 255);
   }
   .form__label{
     color: white;

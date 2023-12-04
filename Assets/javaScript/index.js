@@ -36,22 +36,22 @@ function createParticipantSections(numParticipants) {
               <div class="column">
                   <div class="form__group field">
                       <input type="text" class="form__field" placeholder="Name" name="participant-${i}-name" id="p${i}f0" required="">
-                      <label for="p${i}f0" class="form__label">Name</label>
+                      <!--<label for="p${i}f0" class="form__label">Name</label>-->
                   </div>
                   <p id="p${i}w0" class="war">Enter valid Name</p>
               </div>
               <div class="column">
                   <div class="form__group field">
                       <input type="email" class="form__field" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="participant-${i}-email" id="p${i}f1" required="">
-                      <label for="p${i}f1" class="form__label">Email</label>
+                      <!--<label for="p${i}f1" class="form__label">Email</label>-->
                   </div>
                   <p id="p${i}w1" class="war">Enter valid Email</p>
               </div>
               <div class="column">
                   <div class="form__group field">
-                      <label class="form__label" for="p${i}f2">Year</label>
+                      <!--<label class="form__label" for="p${i}f2">Year</label>-->
                       <select class="form__field" id="p${i}f2" name="participant-${i}-year">
-                          <option class="dropdown-option" value="">Select</option>
+                          <option class="dropdown-option" value="">Select Year</option>
                           <option class="dropdown-option" value="1">1</option>
                           <option class="dropdown-option" value="2">2</option>
                           <option class="dropdown-option" value="3">3</option>
@@ -63,15 +63,15 @@ function createParticipantSections(numParticipants) {
               <div class="column">
                   <div class="form__group field">
                       <input type="text" class="form__field" placeholder="Roll No" name="participant-${i}-roll-no" id="p${i}f3" required="">
-                      <label for="p${i}f3" class="form__label">Roll No</label>
+                      <!--<label for="p${i}f3" class="form__label">Roll No</label>-->
                   </div>
                   <p id="p${i}w3" class="war">Enter valid Roll No</p>
               </div>
               <div class="column">
                   <div class="form__group field">
-                      <label class="form__label" for="p${i}f4">Branch</label>
+                      <!--<label class="form__label" for="p${i}f4">Branch</label>-->
                       <select class="form__field" id="p${i}f4" name="participant-${i}-branch">
-                          <option class="dropdown-option" value="">Select</option>
+                          <option class="dropdown-option" value="">Select Branch</option>
                           <option class="dropdown-option" value="CIVIL">CIVIL</option>
                           <option class="dropdown-option" value="CSB">CSB</option>
                           <option class="dropdown-option" value="CSC">CSC</option>
@@ -87,9 +87,9 @@ function createParticipantSections(numParticipants) {
               </div>
               <div class="column">
                   <div class="form__group field">
-                      <label class="form__label" for="p${i}f5">Section</label>
+                      <!--<label class="form__label" for="p${i}f5">Section</label>-->
                       <select class="form__field" id="p${i}f5" name="participant-${i}-section">
-                          <option class="dropdown-option" value="">Select</option>
+                          <option class="dropdown-option" value="">Select Section</option>
                           <option class="dropdown-option" value="A">A</option>
                           <option class="dropdown-option" value="B">B</option>
                           <option class="dropdown-option" value="C">C</option>
@@ -101,7 +101,7 @@ function createParticipantSections(numParticipants) {
               <div class="column">
                   <div class="form__group field">
                       <input type="text" class="form__field" placeholder="Phone No" pattern="^(\+91[\-\s]?)?[0]?(91)?[6789]\d{9}$" name="participant-${i}-phone-no" id="p${i}f6" required="">
-                      <label for="p${i}f6" class="form__label">Phone No</label>
+                      <!--<label for="p${i}f6" class="form__label">Phone No</label>-->
                   </div>
                   <p id="p${i}w6" class="war">Enter valid Phone No</p>
               </div>

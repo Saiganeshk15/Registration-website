@@ -15,8 +15,8 @@ body {
 }
 
 .logo {
-  width: 138px;
-  height: 121px;
+  width: 120px;
+  height: 120px;
 }
 
 .main-container h1 {
@@ -56,7 +56,8 @@ body {
 .team-size {
   margin-bottom: 2%;
 }
-.ts{
+
+.ts {
   margin-bottom: 4%;
 }
 
@@ -126,70 +127,74 @@ inputfield
 ******************/
 
 .form__group {
-    position: relative;
-    padding: 15px 0 0;
-    border: none;
-    background-color: #00B4D8;
-    margin-top: 3%;
-    height: 60px;
-    width: 100%;
-    margin-left: 7%;
-    border-radius: 5px;
+  position: relative;
+  padding: 15px 0 0;
+  border: none;
+  background-color: #00B4D8;
+  margin-top: 3%;
+  height: 60px;
+  width: 100%;
+  margin-left: 7%;
+  border-radius: 5px;
 }
-  
-  .form__field {
-    font-family: inherit;
-    width: 100%;
-    border: 0;
-    outline: 0;
-    padding-left: 5%;
-    font-size: 1.3rem;
-    color: white;
-    padding: 0px 5%;
-    background: transparent;
-    transition: border-color 0.2s;
-  }
-  .form__field::placeholder {
-    color: rgb(255, 255, 255);
-  }
-  .form__label{
-    color: white;
-  }
-  .form__field:placeholder-shown ~ .form__label {
-    font-size: 1.3rem;
-    cursor: text;
-    background-color: transparent;
-    padding-left: 5%;
-    top: 15px;
-  }
-  
-  .form__label {
-    position: absolute;
-    display: block;
-    top: 0;
-    font-size: 1rem;
-    padding-left: 5%;
-    transition: 0.2s;
-  }
-  
-  .form__field:focus {
-    padding-bottom: 0px;
-    padding-left: 5%;
-    background-color: transparent;
-    border-width: 3px;
-    border-image-slice: 1;
-  }
-  .form__field:focus ~ .form__label {
-    position: absolute;
-    top: 0;
-    display: block;
-    transition: 0.2s;
-    padding-left: 5%;
-    background-color: transparent;
-    font-size: 1rem;
-  }
-  
-  /* Change autocomplete styles in WebKit */
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  padding-left: 5%;
+  font-size: 1.3rem;
+  color: white;
+  padding: 0px 5%;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+  color: rgb(255, 255, 255);
+}
+
+.form__label {
+  color: white;
+}
+
+.form__field:placeholder-shown~.form__label {
+  font-size: 1.3rem;
+  cursor: text;
+  background-color: transparent;
+  padding-left: 5%;
+  top: 15px;
+}
+
+.form__label {
+  position: absolute;
+  display: block;
+  top: 0;
+  font-size: 1rem;
+  padding-left: 5%;
+  transition: 0.2s;
+}
+
+.form__field:focus {
+  padding-bottom: 0px;
+  padding-left: 5%;
+  background-color: transparent;
+  border-width: 3px;
+  border-image-slice: 1;
+}
+
+.form__field:focus~.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  padding-left: 5%;
+  background-color: transparent;
+  font-size: 1rem;
+}
+
+/* Change autocomplete styles in WebKit */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -315,7 +320,8 @@ RESPONSIVE STYLES
   .hero-section p {
     font-size: 20px;
   }
-  footer{
+
+  footer {
     height: 80px;
     flex-direction: column;
     justify-content: center;
@@ -340,6 +346,11 @@ RESPONSIVE STYLES
     font-size: 13px;
     text-align: center;
     margin-bottom: 10px;
+  }
+
+  .logo {
+    width: 100px;
+    height: 100px;
   }
 
   .logo-gap {
@@ -385,7 +396,8 @@ RESPONSIVE STYLES
   .hero-section p {
     font-size: 20px;
   }
-  .form__group{
+
+  .form__group {
     width: 90%;
   }
 
@@ -503,26 +515,32 @@ footer{
   .hero-section p {
     font-size: 18px;
   }
-  .form__group{
+
+  .form__group {
     width: 90%;
   }
 
   .column {
     display: block;
   }
-  h1{
-    font-size: 20px!important;
-  }h2{
-    font-size: 18px!important;
+
+  h1 {
+    font-size: 20px !important;
   }
-  .form{
+
+  h2 {
+    font-size: 18px !important;
+  }
+
+  .form {
     border-radius: 15px;
-}
-footer{
-  height: 100px;
-  flex-direction: column;
-  justify-content: center;
-}
+  }
+
+  footer {
+    height: 100px;
+    flex-direction: column;
+    justify-content: center;
+  }
 
   .form {
     border-radius: 15px;

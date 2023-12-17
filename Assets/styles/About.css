@@ -15,8 +15,8 @@ body {
 }
 
 .logo {
-  width: 138px;
-  height: 121px;
+  width: 120px;
+  height: 120px;
 }
 
 .upcoming-Events {
@@ -262,6 +262,11 @@ RESPONSIVE STYLES
 @media screen and (max-width: 427px) and (min-width: 376px) {
   .text {
     font-size: 15px;
+  }
+
+  .logo {
+    width: 100px;
+    height: 100px;
   }
 
   .submit {
